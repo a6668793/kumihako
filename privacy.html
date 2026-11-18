@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>隱私權政策｜Kumihako 組盒</title>
+<meta name="description" content="Kumihako 組盒的隱私權政策：資料只存在你的瀏覽器，不收集、不追蹤、不出售。">
+<meta property="og:title" content="隱私權政策｜Kumihako 組盒">
+<meta property="og:description" content="Kumihako 組盒的隱私權政策：資料只存在你的瀏覽器，不收集、不追蹤、不出售。">
+<meta property="og:image" content="https://a6668793.github.io/kumihako/assets/og.png">
+<meta property="og:url" content="https://a6668793.github.io/kumihako/privacy.html">
+<meta name="theme-color" content="#0e0e10">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="./"><img src="assets/icon.svg" alt="">Kumihako <span>組盒</span></a>
+  <nav class="nav"><a href="./#features">功能</a><a href="./#trust">隱私與安全</a><a href="./#faq">常見問題</a><a href="privacy.html">隱私權政策</a></nav>
+</div></header>
+<main class="doc"><h1>Kumihako 組盒 隱私權政策</h1>
+<p class="meta">最後更新：2026 年 11 月 19 日（適用版本 0.16.2 起）</p>
+<p>Kumihako 組盒（以下稱「本擴充功能」）是在 ChatGPT 網頁版（<a href="https://chatgpt.com" rel="noopener">https://chatgpt.com</a>）上使用的瀏覽器擴充功能，協助你整理對話、建立書籤與筆記、管理提示詞與匯出內容。</p>
+<p><strong>本擴充功能不是 OpenAI 的官方產品，與 OpenAI 沒有合作或隸屬關係。</strong> ChatGPT 是 OpenAI 的商標。</p>
+<h2>一句話說明</h2>
+<p>你的資料只存在你自己的瀏覽器裡。開發者沒有伺服器，不會收集、上傳、出售或分享你的任何資料。只有在你主動使用特定功能時，才會用你自己的 ChatGPT 帳號把必要的內容送給 ChatGPT（OpenAI）處理。</p>
+<h2>1. 存在你瀏覽器裡的資料</h2>
+<p>以下資料存在瀏覽器的擴充功能儲存空間（<code>chrome.storage.local</code>），只有在這台電腦的這個瀏覽器設定檔中可以讀取：</p>
+<table>
+<thead>
+<tr>
+<th>資料</th>
+<th>內容</th>
+<th>保存方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>整理資料</td>
+<td>你建立的資料夾、星標、書籤、筆記、收藏的片段、提示詞與設定</td>
+<td>保存到你刪除為止；可在「設定」匯出備份或清除</td>
+</tr>
+<tr>
+<td>輸入框草稿</td>
+<td>每個對話尚未送出的文字，用來在重新整理後還原</td>
+<td>超過 14 天或超過 200 份時自動刪除最舊的；不包含在備份檔中</td>
+</tr>
+<tr>
+<td>對話清單索引</td>
+<td>只有對話的 ID、標題、建立與更新時間（不含對話內容），在你按「同步全部對話清單」後才會建立</td>
+<td>可在「設定」按「清除同步資料」刪除</td>
+</tr>
+</tbody>
+</table>
+<p>這些資料<strong>不會</strong>傳送給開發者或任何第三方。</p>
+<h2>2. 讀取 ChatGPT 頁面上的內容</h2>
+<p>為了提供段落導覽、接著問、匯出、程式碼清單等功能，本擴充功能會讀取你目前開啟的 ChatGPT 頁面上已顯示的內容。這些內容只在你的瀏覽器中處理，不會被上傳或保存（除非你自己把它加入書籤、筆記或片段，或匯出成檔案）。</p>
+<h2>3. 使用你的 ChatGPT 帳號執行的動作</h2>
+<p>以下功能只會在<strong>你主動操作時</strong>執行，並透過你已登入的 ChatGPT 帳號直接與 ChatGPT（OpenAI）溝通，不經過開發者的伺服器：</p>
+<ul>
+<li><strong>刪除、封存對話</strong>：你確認後，對你選取的對話執行。</li>
+<li><strong>同步全部對話清單</strong>：分頁讀取對話的標題與時間（不讀取內容），存在你的瀏覽器中。</li>
+<li><strong>GPT 改寫提示詞、旁支提問、讓 GPT 想延伸問題</strong>：在背景開啟一個 ChatGPT 暫存對話分頁，送出這次工作需要的內容（例如你的草稿、你選取的段落與問題、最後一組問答），讀回結果後關閉分頁。暫存對話不會出現在你的 ChatGPT 對話記錄中。</li>
+</ul>
+<p>執行這些動作時，本擴充功能會向 ChatGPT 取得目前登入工作階段的存取權杖，只保留在記憶體中供這次操作使用，<strong>不會寫入儲存空間，也不會傳送給 ChatGPT 以外的任何地方</strong>。</p>
+<p>送到 ChatGPT 的內容，依 OpenAI 的使用條款與隱私權政策處理：<a href="https://openai.com/policies/" rel="noopener">https://openai.com/policies/</a></p>
+<h2>4. 選用的自建 AI 後端</h2>
+<p>預設不會連線到任何 AI 後端。只有當你自己在設定中填入 AI 後端網址並切換為使用時，相關功能才會把必要的內容（例如要摘要的回覆）送到<strong>你指定的網址</strong>。開發者不提供、也無法存取這個後端。</p>
+<h2>5. 剪貼簿與下載</h2>
+<ul>
+<li>你按「複製」時，才會把內容寫入剪貼簿。</li>
+<li>匯出（Markdown、HTML、JSON 備份等）會直接下載到你的電腦，不會上傳。</li>
+</ul>
+<h2>6. 權限說明</h2>
+<table>
+<thead>
+<tr>
+<th>權限</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>storage</code></td>
+<td>在你的瀏覽器中保存上面第 1 點的資料</td>
+</tr>
+<tr>
+<td>在 <code>https://chatgpt.com/*</code> 執行</td>
+<td>在 ChatGPT 頁面上加入整理工具與操作按鈕</td>
+</tr>
+</tbody>
+</table>
+<p>本擴充功能不使用遠端程式碼，所有程式都包含在安裝檔中。</p>
+<h2>7. 不做的事</h2>
+<ul>
+<li>不收集分析數據、不追蹤使用行為、不放廣告。</li>
+<li>不出售或轉讓任何使用者資料。</li>
+<li>不把資料用於與本擴充功能核心功能無關的用途，也不用於判斷信用或借貸資格。</li>
+</ul>
+<h2>8. 刪除你的資料</h2>
+<ul>
+<li>在「設定」可以清除對話清單索引，或匯出後清除整理資料。</li>
+<li>移除本擴充功能時，瀏覽器會一併刪除它保存的所有資料。</li>
+</ul>
+<h2>9. 兒童</h2>
+<p>本擴充功能不針對 13 歲以下兒童設計，也不會刻意收集兒童的資料。</p>
+<h2>10. 政策變更</h2>
+<p>政策更新時會修改本頁的「最後更新」日期，重大變更會在擴充功能的更新說明中註明。</p>
+<h2>11. 聯絡方式</h2>
+<p>對本政策有任何疑問，請聯絡：<a href="mailto:a6668793@gmail.com">a6668793@gmail.com</a></p></main>
+<footer><div class="wrap">
+  <div>© 2026 Kumihako 組盒 · 聯絡：<a href="mailto:a6668793@gmail.com">a6668793@gmail.com</a></div>
+  <div><a href="privacy.html">隱私權政策</a> · 非 OpenAI 官方產品，ChatGPT 是 OpenAI 的商標。</div>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- 方案 A｜對話資料夾：黑底圓角方塊，橘色「資料夾頁籤＋對話框尾巴」 -->
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="#0e0e10"/>
+  <path d="M30 40 Q30 33 37 33 H53 Q57 33 59 37 L62 42 H91 Q98 42 98 49 V80 Q98 87 91 87 H54 L39 99 V87 H37 Q30 87 30 80 Z" fill="#ff7a1a"/>
+  <rect x="42" y="56" width="40" height="7" rx="3.5" fill="#0e0e10"/>
+  <rect x="42" y="69" width="25" height="7" rx="3.5" fill="#0e0e10"/>
+</svg>
